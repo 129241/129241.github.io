@@ -84,8 +84,8 @@ footer {
     right: 10px;
 }
 .carousel img {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
