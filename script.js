@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling for internal links
     const links = document.querySelectorAll("nav ul li a");
 
     for (const link of links) {
@@ -19,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Allow default behavior for external links (those not starting with '#')
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
+    // Carousel functionality
     const slides = document.querySelectorAll('.slide');
     const next = document.querySelector('.next');
     const prev = document.querySelector('.prev');
