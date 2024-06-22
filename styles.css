@@ -53,3 +53,10 @@ footer {
     text-align: center;
 }
 
+#homebuttons {
+    background-color: #434A54;
+    padding: 20px;
+    color: #000001; /* Adjust text color for contrast */
+    text-align: center;
+}
+
