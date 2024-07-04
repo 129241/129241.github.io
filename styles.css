@@ -9,12 +9,15 @@ header {
     background: #363538;
     color: #fff;
     padding: 1em 0;
-    text-align: center;
 }
 
 header h1 {
     margin: 0;
 }
+.header {
+    text-align: center;
+}
+
 .homepage {
     color: #F30F0F /* Header color */
 }
