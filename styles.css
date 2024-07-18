@@ -14,7 +14,6 @@ header {
 
 header h1 {
     margin: 0;
-    font-style: italic;
 }
 
 #beta {
@@ -23,6 +22,7 @@ header h1 {
 
 .homepage {
     color: #F30F0F /* Header color */
+    font-style: italic;
 }
 
 nav ul {
