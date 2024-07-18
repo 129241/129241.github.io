@@ -22,7 +22,6 @@ header h1 {
 
 .homepage {
     color: #F30F0F /* Header color */
-    font-style: italic;
 }
 
 nav ul {
@@ -43,7 +42,7 @@ nav ul li a {
 section {
     padding: 2em;
     border-bottom: 1px solid #ddd;
-    color: #010521
+    background: #010521;
 }
 
 footer {
