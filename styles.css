@@ -29,6 +29,7 @@ header h1 {
 
 .homepage {
     text-align: center;
+    padding: 10px;
     color: #F30F0F /* Header color */
 }
 
