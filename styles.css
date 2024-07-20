@@ -105,7 +105,10 @@ footer {
 }
 
 #wikititle {
-    text-align: center;
-    font-size: 25px;
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+    height: 100vh;            /* Makes the section take full viewport height */
+    text-align: center;       /* Center the text within the flex item */
 }
 
