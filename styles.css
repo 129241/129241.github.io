@@ -28,6 +28,7 @@ header h1 {
 }
 
 .homepage {
+    text-align: center;
     color: #F30F0F /* Header color */
 }
 
