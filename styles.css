@@ -4,52 +4,38 @@ body {
     padding: 0;
     line-height: 1.6;
     color: white;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    img { max-width: 100%; height: auto;}
 }
 
 header {
     background: #07042b;
     color: #fff;
     padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
-    flex-grow: 1;
-    text-align: center;
 }
 
 #beta {
-    position: absolute;
-    left: 1em;
-    display: flex;
-    align-items: center;
-}
-
-#beta img {
-    width: 60px;
-    border-radius: 50%;
-    margin-left: 10px;
+    text-align: right;
+    img {
+  width: 60px;
+  border-radius: 50%;
+  float: left;      
+    }
 }
 
 .homepage {
-    color: #F30F0F; /* Header color */
+    text-align: center;
+    margin: 0 auto;
+    color: #F30F0F /* Header color */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
@@ -64,7 +50,7 @@ nav ul li a {
 
 section {
     padding: 2em;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid ##000000;
     background: #010417;
 }
 
@@ -76,6 +62,7 @@ footer {
 }
 
 #home {
+    background-color: ;
     padding: 20px;
     color: #fff; /* Adjust text color for contrast */
     text-align: center;
@@ -90,35 +77,39 @@ footer {
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
 }
 
 .btn-group .button {
-    background-color: #222238; /* button color */
-    border: gray;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #222238; /* button color */
+  border: gray;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
 }
 
 .btn-group .button:hover {
-    background-color: #161624;
+  background-color: #161624;
 }
+
 
 #wikititle {
     text-align: center;
     font-size: 25px;
 }
 
-#wikiarpg3 img {
-    width: 150px;
+#wikiarpg3 {
+   img {width: 150px};
 }
+
 
 .arpglogo {
     position: absolute;
