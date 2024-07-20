@@ -104,7 +104,7 @@ footer {
  color: white;
 }
 
-.wikititle {
+#wikititle {
     display: flex;
     justify-content: center;  /* Horizontally centers the content */
     align-items: center;      /* Vertically centers the content */
@@ -112,6 +112,6 @@ footer {
     text-align: center;       /* Center the text within the flex item */
 }
 
-.wikiarpg3 {
+#wikiarpg3 {
     width: 400px;
 }
