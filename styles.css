@@ -22,7 +22,7 @@ header h1 {
     img {
   width: 60px;
   border-radius: 50%;
-      img-align: left; 
+  float: left;      
     }
 }
 
