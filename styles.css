@@ -98,9 +98,7 @@ footer {
  color: white;
 }
 
-}
-
-#wikititle
+#wikititle {
     text-align: center;
     font-size: 20px;
 }
