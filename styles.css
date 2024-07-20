@@ -12,6 +12,10 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 header h1 {
@@ -29,6 +33,7 @@ header h1 {
 
 .homepage {
     text-align: center;
+    margin: 0 auto;
     color: #F30F0F /* Header color */
 }
 
@@ -107,4 +112,10 @@ footer {
 
 #wikiarpg3 {
    img {width: 150px};
+}
+
+
+.arpglogo {
+    position: absolute;
+    left: 0;
 }
