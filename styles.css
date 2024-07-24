@@ -115,3 +115,7 @@ footer {
     position: absolute;
     left: 0;
 }
+
+#border {
+    border-bottem: 1px solid #dddddd;
+}
