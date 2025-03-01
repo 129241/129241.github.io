@@ -18,15 +18,6 @@ header h1 {
     margin: 0;
 }
 
-#logo {
-    text-align: right;
-    img {
-  width: 60px;
-  border-radius: 50%;
-  float: left;      
-    }
-}
-
 .homepage {
     text-align: center;
     margin: 0 auto;
@@ -100,21 +91,6 @@ footer {
   background-color: #161624;
 }
 
-
-#wikititle {
-    text-align: center;
-    font-size: 25px;
-}
-
-#wikiarpg3 {
-   img {width: 150px};
-}
-
-
-.arpglogo {
-    position: absolute;
-    left: 0;
-}
 
 #border {
     border-bottem: 1px solid #dddddd;
