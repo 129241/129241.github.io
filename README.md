@@ -1,2 +1,2 @@
-# adventurerpg.github.io
-A website for a game and discord. Currently in beta.
+# don't know atm
+Some website soon... hopefully...
