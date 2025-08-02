@@ -35,3 +35,10 @@ button {
   padding: 10px 20px;
   font-size: 1em;
 }
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}
