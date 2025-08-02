@@ -1,43 +1,51 @@
 const board = document.getElementById("board");
 const statusText = document.getElementById("status");
+
 let currentPlayer = "X";
 let cells = Array(9).fill(null);
+let gameOver = false;
 
 function createBoard() {
   board.innerHTML = "";
   cells = Array(9).fill(null);
+  gameOver = false;
+  currentPlayer = "X";
+  statusText.textContent = `Player ${currentPlayer}'s turn`;
+
   for (let i = 0; i < 9; i++) {
     const cell = document.createElement("div");
-    cell.className = "cell";
+    cell.classList.add("cell");
     cell.dataset.index = i;
-    cell.addEventListener("click", handleMove);
+    cell.addEventListener("click", handleClick);
     board.appendChild(cell);
   }
-  statusText.textContent = `Player ${currentPlayer}s turn`;
 }
 
-function handleMove(e) {
+function handleClick(e) {
   const index = e.target.dataset.index;
-  if (cells[index] || checkWinner()) return;
+
+  if (cells[index] || gameOver) return;
 
   cells[index] = currentPlayer;
   e.target.textContent = currentPlayer;
 
   if (checkWinner()) {
-    statusText.textContent = `Player ${currentPlayer} Wins!`;
+    statusText.textContent = `Player ${currentPlayer} wins!`;
+    gameOver = true;
   } else if (cells.every(cell => cell)) {
-    statusText.textContent = "Tie!";
+    statusText.textContent = "It's a draw!";
+    gameOver = true;
   } else {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
-    statusText.textContent = `Player ${currentPlayer}s turn`;
+    statusText.textContent = `Player ${currentPlayer}'s turn`;
   }
 }
 
 function checkWinner() {
   const winPatterns = [
-    [0,1,2],[3,4,5],[6,7,8], // rows
-    [0,3,6],[1,4,7],[2,5,8], // cols
-    [0,4,8],[2,4,6]          // diagonals
+    [0,1,2], [3,4,5], [6,7,8], // rows
+    [0,3,6], [1,4,7], [2,5,8], // columns
+    [0,4,8], [2,4,6]           // diagonals
   ];
 
   return winPatterns.some(pattern => {
@@ -47,8 +55,8 @@ function checkWinner() {
 }
 
 function restartGame() {
-  currentPlayer = "X";
   createBoard();
 }
 
+// Initialize the game
 createBoard();
