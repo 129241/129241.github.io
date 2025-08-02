@@ -27,7 +27,11 @@ function handleClick(e) {
   if (cells[index] || gameOver) return;
 
   cells[index] = currentPlayer;
-  e.target.textContent = currentPlayer;
+  const mark = document.createElement("span");
+mark.textContent = currentPlayer;
+mark.className = currentPlayer === "X" ? "x" : "o";
+e.target.appendChild(mark);
+
 
   if (checkWinner()) {
     statusText.textContent = `Player ${currentPlayer} wins!`;
