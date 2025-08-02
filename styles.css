@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #FF00FF;
+    background: #202E6E;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -16,12 +16,6 @@ header {
 
 header h1 {
     margin: 0;
-}
-
-.homepage {
-    text-align: center;
-    margin: 0 auto;
-    color: #F30F0F /* Header color */
 }
 
 nav ul {
